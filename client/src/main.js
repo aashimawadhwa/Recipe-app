@@ -2,12 +2,14 @@ import { useEffect } from "react";
 import Preloader from "./components/preloader";
 import{readRecipes} from "./functions";
 import { useState } from "react";
+import './style.css';
 
 
 function App() {
+ 
 
 // const [recipe, setRecipe] = useState({tittle: '' , content:'',recipe:''});
-const[recipes,setRecipes]=useState();  
+const[recipes,setRecipes]=useState(null);  
 
 useEffect(() => {
     const fetchData = async() => {
@@ -15,16 +17,21 @@ useEffect(() => {
       setRecipes(result);
     };
     fetchData();
-  },[]);
-
-  return (
-   <div classname="container">
-  <div className="row">
     
+  },[]);
+  return (
+   
+   <div classname="container">
+     
+  <div className="row">
+  
 
    {
+     
      !recipes ? <Preloader/>:recipes.length>0? <div className="collection">
        {recipes.map(recipe=>(
+        
+
                 <div class="row">
                 <div class="col s12 m12">
                   <div class="blue-grey darken-1">
@@ -50,5 +57,4 @@ useEffect(() => {
 
   );
 }
-
 export default App;

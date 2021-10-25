@@ -6,7 +6,6 @@ import history from './history';
 import './style.css';
 
 function App() {
-
 const [recipe, setRecipe] = useState({tittle: '' , content:'',recipe:''});
 const[recipes,setRecipes]=useState(null);  
 const [currentId, setCurrentId] = useState(0);
@@ -19,6 +18,7 @@ useEffect(() => {
       // e.preventDefault();
       const result = await readRecipes();
       setRecipes(result);
+      
     };
     fetchData();
   },[currentId]);
@@ -29,7 +29,7 @@ useEffect(() => {
   useEffect(() => {
     const clearField = (e) => {
       if(e.keyCode === 27){
-       clear()
+       clear();
       }
     }
     window.addEventListener('keydown', clearField)
@@ -54,6 +54,11 @@ useEffect(() => {
     recipesCopy.filter(recipe => recipe._id !== id);
     setRecipes(recipesCopy);
   }
+  const click = () => {
+  
+    history.push('/main');
+window.location.reload();    
+  };
   return (
    <div classname="container">
   <div className="row">
@@ -96,8 +101,8 @@ useEffect(() => {
       </div>
     </form>
     <div className="row center-align">
-        <button className="waves-effect waves-light btn"  onClick={() => history.push('/Main')}>Preview Recipe</button>
-       
+        <button className="waves-effect waves-light btn"  onClick={click}>Preview Recipe</button>
+      
       </div>
    {
      !recipes ? <Preloader/>:recipes.length>0? <div className="collection">
