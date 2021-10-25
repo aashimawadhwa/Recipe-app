@@ -51,7 +51,7 @@ can be shared as much as one want without any damage, with added love presenting
 ## key-Points-
 
 - Stores recipes using CRUD functionality.
-- clean and readible ui.
+- clean and readible UI.
 - Update and Delete recipe features.
 
 ## Hosting - 
