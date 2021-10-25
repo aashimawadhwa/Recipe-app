@@ -15,14 +15,8 @@ can be shared as much as one want without any damage, with added love presenting
   
   ```
     $ git clone git clone https://github.com/<your-username>/Recipe-app.git
-
+    $ cd client
   ```
-    ```
-
-   $ npm install 
-
-  ```
-
     
  #### 2. Install node packages
   * Write the following command and press enter to download all required node modules.
