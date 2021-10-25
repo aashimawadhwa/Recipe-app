@@ -38,10 +38,9 @@ can be shared as much as one want without any damage, with added love presenting
 
 
 ## Tech-Stack -
-- MongoDB
-- ExpressJS
-- NodeJS
-- ReactJS
+<img  src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="typeScript" > <img  src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" alt="Express" > <img  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="typeScript" > <img  src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongoDB">
+
+
 
 ## screenshots -
 
@@ -55,7 +54,8 @@ can be shared as much as one want without any damage, with added love presenting
 - clean and readible ui.
 - Update and Delete recipe features.
 
-### Hosting - Heroku
+## Hosting - 
+<img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/>
 
 
 
